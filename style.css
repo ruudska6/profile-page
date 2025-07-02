@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ownglyph_corncorn-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2412-1@1.0/Ownglyph_corncorn-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+}
+
+body {
+    background-color: white;
+    width: 60%;
+}
+
+.me {
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+   
+}
+
+.me p {
+    font-family: 'Ownglyph_corncorn-Rg';
+    font-size: 25px;
+    margin-top: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+img.me-img {
+    height: 280px;
+    margin-right: 10px;
+    margin-left: 50px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Pretendard-Regular';
+  background-color: white;
+}
+
+.github-img {
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+}
+
+.github {
+    display: flex;
+
+}
+
+hr {
+    margin-top: 10px;
+    width: 80%;
+    color: #f1f3f5;
+    opacity: 0.5;
+}
+
+
+h2 {
+    color: black;
+    opacity: 0.7;
+}
+
+.badge {
+    display: flex;
+    width: 400px;
+    justify-content: center;
+    
+}
+.badge img {
+    display: flex;
+    justify-content: center;
+    margin-left: 3px;
+}
+
+.contact-profile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.experience-list {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;  
+}
+
+.experience-list p {
+    margin-left: 40px;
+}
+
+.experience-list img { 
+width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-left: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+header strong {
+    font-size: 50px;
+}
