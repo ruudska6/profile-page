@@ -61,13 +61,13 @@ img.me-img {
 }
 
 .github-img {
-    height: 30px;
-    width: 30px;
-    margin-top: 10px;
+    height: 25px;
+    width: 25px;
 }
 
 .github {
     display: flex;
+    align-items: center;
 
 }
 
