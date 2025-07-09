@@ -1,146 +1,133 @@
 @font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 
-html, body {
-    height: 90%;
+html,
+body {
+  height: 100vh;
 }
 
 html {
-    display:flex;
-    justify-content: center;
-    background-color: #f2f4f6;
+  background-color: #f2f4f6;
+  scroll-behavior: smooth;
 }
 
 body {
-    width: 60%;    
-}
-
-.me {
-    display: flex;
-    justify-content: center;
-    margin-right: 50px;
-   
-}
-
-
-img.me-img {
-    height: 280px;
-    margin-right: 10px;
-    margin-left: 50px;
+  margin: 0;
 }
 
 .wrapper {
   display: flex;
+  margin-top: 100px;
   flex-direction: column;
   align-items: center;
-  font-family: 'Pretendard-Regular';
+  font-family: "Pretendard-Regular";
   background-color: white;
-
   border-radius: 10px 10px 10px 10px;
   border-style: solid;
   border-width: 1px;
   border-color: lightgrey;
-  overflow: hidden;
+  /* overflow: hidden; */
+}
+
+.super-wrap {
+  width: 1000px;
+}
+
+.width-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 .github-img {
-    height: 25px;
-    width: 25px;
+  height: 25px;
+  width: 25px;
 }
 
 .github {
-    display: flex;
-    align-items: center;
-
+  display: flex;
+  align-items: center;
 }
 
 .skills ul {
   display: flex;
-  flex-wrap: wrap;  /* 줄바꿈 허용 */
+  flex-wrap: wrap; /* 줄바꿈 허용 */
   list-style: none; /* li 앞 점 없애기 */
   padding: 0;
 }
 
-.certificate-list ul{
-  list-style: none; 
-}
-
-.skills ul li {
-  width: 30%;       /* 한 줄에 3개 (조금 여유있게 30%) */
-  margin: 1%;       /* 항목 사이 여백 */
+.certificate-list ul {
+  list-style: none;
 }
 
 .skills {
   width: 80%;
   margin: 40px auto;
-  padding: 10px 20px;
-  background-color: #ffffff;
+  padding: 24px;
+  background-color: #fafafa;
   border: 1px solid #e0e0e0;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 .skills h2 {
-  text-align: left;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
-  margin-bottom: 20px;
   color: #222;
+  margin-bottom: 20px;
+  padding-left: 10px;
 }
 
 .skills ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
 }
 
 .skills li {
-  background-color: white;
-  border: 1px solid #ddd;
-  padding: 10px 14px;
+  padding: 10px 16px;
+  font-size: 14px;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
   border-radius: 6px;
-  font-size: 15px;
   color: #333;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  text-align: center;
+  transition: background-color 0.2s ease;
 }
-
-
 
 hr {
-    margin-top: 10px;
-    width: 80%;
-    color: #f1f3f5;
-    opacity: 0.5;
+  margin-top: 10px;
+  width: 80%;
+  color: #f1f3f5;
+  opacity: 0.5;
 }
 
-
 h2 {
-    color: black;
-    opacity: 0.7;
+  color: black;
+  opacity: 0.7;
 }
 
 .badge {
-    display: flex;
-    width: 400px;
-    justify-content: center;
-    
+  display: flex;
+  width: 400px;
+  justify-content: center;
 }
 .badge img {
-    display: flex;
-    justify-content: center;
-    margin-left: 3px;
+  display: flex;
+  justify-content: center;
+  margin-left: 3px;
 }
 
 .contact-profile {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .experience-list {
@@ -168,16 +155,15 @@ h2 {
   margin-right: 100px;
 }
 
-
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
 }
 
 header strong {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 .certificate-list {
@@ -256,6 +242,11 @@ header strong {
   object-fit: cover;
   border-radius: 8px;
   margin-right: 20px;
+  margin-left: 15px;
+}
+
+.experience-item-content {
+  margin-right: 5px;
 }
 
 .experience-item-content h3 {
@@ -276,8 +267,6 @@ header strong {
   margin: 40px auto;
   padding: 20px;
   background-color: #ffffff;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
 }
 
 .introduction h2 {
@@ -288,13 +277,9 @@ header strong {
 }
 
 .introduction h3 {
-    font-size: 25px;
-    line-height: 10px;
-
-    
+  font-size: 25px;
+  line-height: 10px;
 }
-
-
 
 .introduction p {
   font-size: 15px;
@@ -313,8 +298,126 @@ header strong {
 }
 
 .introduction #slogan {
-    font-size: 30px;
-    margin-bottom: 50px;
-    font-style: italic;
+  font-size: 30px;
+  margin-bottom: 50px;
+  font-style: italic;
 }
 
+.img #me-img {
+  width: 150px;
+  height: 170px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* 사이드 네비게이션 고정 */
+.side-nav {
+  position: fixed;
+  top: 50%;
+  right: 13%;
+  transform: translateY(-50%);
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  z-index: 1000;
+  text-align: center;
+}
+
+.side-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.side-nav li {
+  margin: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+.side-nav li:last-child {
+  border-bottom: none;
+}
+
+.side-nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.side-nav a:hover {
+  color: #007bff;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.contact-list {
+  width: 80%;
+  margin: 40px auto;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.contact-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact-list li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.footer {
+  width: 100%;
+  margin-top: 60px;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  background-color: #e2e5e8;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.learn-more-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* 파란색 */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.learn-more-btn:hover {
+  background-color: #0056b3; /* hover 시 어두운 파랑 */
+}
+
+.skills li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-logo img {
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+  object-fit: cover;
+}

@@ -1,109 +1,211 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <title>신경남의 프로필 페이지</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="wrapper">
-
-    <section class="introduction">
-        <h2>Introduction</h2>
-        <h3>신경남</h3>
-        <h3>백엔드 개발자</h3>
-        <span id="slogan">
-            안녕하세요! 저는 <strong>읽기 쉬운 코드</strong> 작성을 노력하며, 성장하고 있는 백엔드 개발자 <strong>신경남</strong>입니다.
-        </span> 
-        <br />
-        <p>
-            Java와 Spring 기반의 웹 서비스 개발 경험을 쌓고 있으며,<br />
-            금융에 대한 관심을 갖고 우리FIS 아카데미에서 학습을 진행하고 있습니다.
-        </p>
-    </section>
-
-
-
-
-    <section class="skills">
-      <h2>Skill Set</h2>
+  <head>
+    <meta charset="UTF-8" />
+    <title>신경남의 프로필 페이지</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <nav class="side-nav">
       <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Spring</li>
-        <li>Django</li>
-        <li>GIT</li>
+        <li><a href="#introduction">소개</a></li>
+        <li><a href="#skills">기술</a></li>
+        <li><a href="#certificates">자격증</a></li>
+        <li><a href="#experience">경험</a></li>
+        <li><a href="#contact">연락처</a></li>
       </ul>
-    </section>
+    </nav>
 
-
-    <section class="certificate-list">
-        <h2>certificate</h2>
-        <ul>
-            <li>정보처리기사 <small>[한국산업인력공단]</small></li>
-            <li>SQLD <small>[한국데이터산업진흥원]</small></li>
-            <li>ADSP <small>[한국데이터산업진흥원]</small></li>
-            <li>재경관리사 <small>[삼일회계법인]</small></li>
-            <li>컴퓨터활용능력 1급 <small>[대한상공회의소]</small></li>
-        </ul>
-        </section>
-
-    <section class="experience-list">
-      <h2>Experience</h2>
-
-      <article class="experience-item woorifisa">
-        <img src="./images/woorifis_logo.jpg" alt="woorifis logo" />
-        <div class="experience-item-content">
-            <h3>우리FIS 아카데미 5기</h3>
-            <p>우리FIS 아카데미 5기에 참여하여 클라우드 기반 백엔드 개발 역량을 키웠으며, 
-                Java와 Spring을 활용한 웹 서비스 개발, DB 설계, 협업 툴 사용 등 실무 중심의 교육을 수강중입니다.</p>
+    <!--  width같은 사이즈  -->
+    <div class="width-wrapper">
+      <!-- flex로 정렬용 -->
+      <div class="super-wrap">
+        <div class="wrapper">
+          <section id="introduction" class="introduction">
+            <h2>Introduction</h2>
+            <h3>신경남</h3>
+            <h3>백엔드 개발자</h3>
+            <div class="img"><img id="me-img" src="images/me-img.jpg" /></div>
+            <span id="slogan">
+              안녕하세요! 저는 <strong>읽기 쉬운 코드</strong> 작성을 노력하며,
+              성장하고 있는 백엔드 개발자 <strong>신경남</strong>입니다.
+            </span>
+            <br />
+            <p>
+              Java와 Spring 기반의 웹 서비스 개발 경험을 쌓고 있으며,<br />
+              금융에 대한 관심을 갖고 우리FIS 아카데미에서 풀스택 과정 학습을
+              진행하고 있습니다.
+            </p>
+          </section>
+          <section id="skills" class="skills">
+            <h2>Skill Set</h2>
+            <ul>
+              <li>
+                <div class="skills-logo">
+                  <img src="images/html-logo.png" />
+                </div>
+                HTML
+              </li>
+              <li>
+                <div class="skills-logo">
+                  <img src="images/js-logo.png" />
+                </div>
+                JavaScript
+              </li>
+              <li>
+                <div class="skills-logo">
+                  <img src="images/spring-logo.svg" />
+                </div>
+                Spring
+              </li>
+              <li>
+                <div class="skills-logo">
+                  <img src="images/django-logo.svg" />
+                </div>
+                Django
+              </li>
+              <li>
+                <div class="skills-logo">
+                  <img src="images/mysql-logo.png" />
+                </div>
+                MySQL
+              </li>
+              <li>
+                <div class="skills-logo">
+                  <img src="images/git-logo.png" />
+                </div>
+                GIT
+              </li>
+            </ul>
+          </section>
+          <section id="certificates" class="certificate-list">
+            <h2>certificate</h2>
+            <ul>
+              <li>정보처리기사 <small>[한국산업인력공단]</small></li>
+              <li>SQLD <small>[한국데이터산업진흥원]</small></li>
+              <li>ADSP <small>[한국데이터산업진흥원]</small></li>
+              <li>재경관리사 <small>[삼일회계법인]</small></li>
+              <li>컴퓨터활용능력 1급 <small>[대한상공회의소]</small></li>
+            </ul>
+          </section>
+          <section id="experience" class="experience-list">
+            <h2>Experience</h2>
+            <article class="experience-item woorifisa">
+              <img src="./images/woorifis_logo.jpg" alt="woorifis logo" />
+              <div class="experience-item-content">
+                <h3>우리FIS 아카데미 5기</h3>
+                <p>
+                  우리FIS 아카데미 5기에 참여하여 클라우드 기반 백엔드 개발
+                  역량을 키웠으며, Java와 Spring을 활용한 웹 서비스 개발, DB
+                  설계, 협업 툴 사용 등 실무 중심의 교육을 수강중입니다.
+                </p>
+                <div class="button-wrapper">
+                  <a
+                    href="https://woorifisa.com/"
+                    class="learn-more-btn"
+                    target="_blank"
+                    >더 알아보기</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="experience-item python-helper">
+              <img src="./images/python-logo.png" alt="Python logo" />
+              <div class="experience-item-content">
+                <h3>파이썬 프로그래밍 수업 헬퍼</h3>
+                <p>
+                  비전공자를 대상으로 수업하는 컴퓨터프로그래밍1,2 수업의
+                  조교로서 질의응답 역할을 하였습니다.
+                </p>
+                <div class="button-wrapper">
+                  <a
+                    href="https://github.com/ruudska6"
+                    class="learn-more-btn"
+                    target="_blank"
+                    >더 알아보기</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="experience-item programming-club">
+              <img src="./images/likelion-logo.png" alt="likeLion logo" />
+              <div class="experience-item-content">
+                <h3>국민대 멋쟁이사자처럼 12기</h3>
+                <p>
+                  개발 동아리 멋쟁이 사자처럼 동아리에서 HTML, CSS, JS,
+                  프레임워크 등 웹 개발을 배우고 해커톤에 참여하여 협업에 대해
+                  배웠습니다.
+                </p>
+                <div class="button-wrapper">
+                  <a
+                    href="https://github.com/ruudska6"
+                    class="learn-more-btn"
+                    target="_blank"
+                    >더 알아보기</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="experience-item project">
+              <img src="./images/airforce-logo.svg" alt="Airforce Project" />
+              <div class="experience-item-content">
+                <h3>군 지원 도움 프로젝트</h3>
+                <p>
+                  풀스택 프레임워크인 Django를 통해 합격 점수 계산기와 직관적인
+                  UI를 구성하여 멋쟁이 사자처럼 교내 해커톤 2등을
+                  수상하였습니다.
+                </p>
+                <div class="button-wrapper">
+                  <a
+                    href="https://github.com/ruudska6"
+                    class="learn-more-btn"
+                    target="_blank"
+                    >더 알아보기</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="experience-item object-study">
+              <img src="./images/object-img.jpg" alt="Object Study" />
+              <div class="experience-item-content">
+                <h3>자바 오브젝트 스터디</h3>
+                <p>
+                  책 '오브젝트'를 통해 2달간 4명이서 랜덤 발표 방식으로 객체지향
+                  프로그래밍을 학습하였습니다.
+                </p>
+                <div class="button-wrapper">
+                  <a
+                    href="https://github.com/ruudska6"
+                    class="learn-more-btn"
+                    target="_blank"
+                    >더 알아보기</a
+                  >
+                </div>
+              </div>
+            </article>
+          </section>
+          <section id="contact" class="contact-list">
+            <h2>Contact</h2>
+            <ul>
+              <li>
+                <strong>Email</strong>:
+                <a href="mailto:feels19@naver.com">feels19@naver.com</a>
+              </li>
+              <li>
+                <strong>GitHub</strong>:
+                <a href="https://github.com/ruudska6" target="_blank"
+                  >ruudska6</a
+                >
+              </li>
+            </ul>
+          </section>
         </div>
-      </article>
+      </div>
+    </div>
 
-      <article class="experience-item python-helper">
-        <img src="./images/python-logo.png" alt="Python logo" />
-        <div class="experience-item-content">
-            <h3>파이썬 프로그래밍 수업 헬퍼</h3>
-            <p>비전공자를 대상으로 수업하는 컴퓨터프로그래밍1,2 수업의 조교로서 질의응답 역할을 하였습니다.</p>
-        </div>
-        
-      </article>
-
-      <article class="experience-item programming-club">
-        <img src="./images/likelion-logo.png" alt="likeLion logo" />
-        <div class="experience-item-content">
-            <h3>국민대 멋쟁이사자처럼 12기</h3>
-            <p>개발 동아리 멋쟁이 사자처럼 동아리에서 HTML, CSS, JS, 프레임워크 등 웹 개발을 배우고 해커톤에 참여하여 협업에 대해 배웠습니다.</p>
-        </div>
-      </article>
-
-      <article class="experience-item project">
-        <img src="./images/airforce-logo.svg" alt="Airforce Project" />
-         <div class="experience-item-content">
-            <h3>군 지원 도움 프로젝트</h3>
-            <p>풀스택 프레임워크인 Django를 통해 합격 점수 계산기와 직관적인 UI를 구성하여 멋쟁이 사자처럼 교내 해커톤 2등을 수상하였습니다.</p>
-        </div>
-      </article>
-
-      <article class="experience-item object-study">
-        <img src="./images/object-img.jpg" alt="Object Study" />
-        <div class="experience-item-content">
-            <h3>자바 오브젝트 스터디</h3>
-            <p>책 '오브젝트'를 통해 2달간 4명이서 랜덤 발표 방식으로 객체지향 프로그래밍을 학습하였습니다.</p>
-        </div>
-       
-      </article>
-
-          
-    </section>
-
-    <hr>
-
-    <section class="contact-list">
-      <h2>Contact</h2>
-      <p>feels19@naver.com</p>
-    </section>
-  </div>
-</body>
+    <footer class="footer">
+      <p>© 2025 신경남. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
