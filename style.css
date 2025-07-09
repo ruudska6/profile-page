@@ -246,6 +246,9 @@ header strong {
 }
 
 .experience-item-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   margin-right: 5px;
 }
 
@@ -420,4 +423,48 @@ header strong {
   height: 20px;
   margin-right: 3px;
   object-fit: cover;
+}
+
+/* 탭 버튼 스타일 */
+.experience-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #ddd;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.tab.active {
+  background-color: #007bff;
+  color: white;
+}
+
+/* article 기본 스타일 (필요 시 flex로 내용 정렬) */
+.experience-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background-color: #fafafa;
+}
+
+.experience-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.experience-item-content {
+  flex: 1;
 }
