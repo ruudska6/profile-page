@@ -12,18 +12,16 @@ html, body {
 html {
     display:flex;
     justify-content: center;
-    background-color: lightgrey;
+    background-color: #f2f4f6;
 }
 
 body {
-    background-color: white;
     width: 60%;    
 }
 
 .me {
     display: flex;
     justify-content: center;
-    margin-left: 50px;
     margin-right: 50px;
    
 }
@@ -41,6 +39,12 @@ img.me-img {
   align-items: center;
   font-family: 'Pretendard-Regular';
   background-color: white;
+
+  border-radius: 10px 10px 10px 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgrey;
+  overflow: hidden;
 }
 
 .github-img {
@@ -69,6 +73,44 @@ img.me-img {
   width: 30%;       /* 한 줄에 3개 (조금 여유있게 30%) */
   margin: 1%;       /* 항목 사이 여백 */
 }
+
+.skills {
+  width: 80%;
+  margin: 40px auto;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.skills h2 {
+  text-align: left;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skills li {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 15px;
+  color: #333;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+
 
 hr {
     margin-top: 10px;
@@ -104,7 +146,6 @@ h2 {
 .experience-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .experience-item {
@@ -113,11 +154,13 @@ h2 {
   margin: 20px 0;
 }
 
-.experience-item img {
-  width: 150px;
-  height: 150px;
+.experience-list img {
+  width: 120px;
+  height: 120px;
   object-fit: cover;
+  border-radius: 10px;
   margin-right: 20px;
+  margin-left: 50px;
 }
 
 .experience-item-content {
@@ -125,12 +168,6 @@ h2 {
   margin-right: 100px;
 }
 
-.experience-list img { 
-width: 150px;
-  height: 150px;
-  object-fit: cover;
-  margin-left: 50px;
-}
 
 header {
     display: flex;
@@ -142,3 +179,142 @@ header {
 header strong {
     font-size: 50px;
 }
+
+.certificate-list {
+  width: 80%;
+  margin: 40px auto;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.certificate-list h2 {
+  text-align: left;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.certificate-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.certificate-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 15px;
+  color: #333;
+}
+
+.certificate-list li:last-child {
+  border-bottom: none;
+}
+
+.certificate-list li small {
+  color: #888;
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+.experience-list {
+  width: 80%;
+  margin: 40px auto;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.experience-list h2 {
+  text-align: left;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+.experience-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.experience-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.experience-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.experience-item-content h3 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.experience-item-content p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.introduction {
+  width: 80%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.introduction h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.introduction h3 {
+    font-size: 25px;
+    line-height: 10px;
+
+    
+}
+
+
+
+.introduction p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.introduction strong {
+  color: #000;
+  font-weight: bold;
+}
+
+.introduction .highlight {
+  color: #4a90e2;
+  font-weight: 500;
+}
+
+.introduction #slogan {
+    font-size: 30px;
+    margin-bottom: 50px;
+    font-style: italic;
+}
+
