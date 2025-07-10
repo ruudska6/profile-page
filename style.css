@@ -9,15 +9,10 @@
 html,
 body {
   height: 100vh;
-}
-
-html {
+  margin: 0;
   background-color: #f2f4f6;
   scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
+  font-family: "Pretendard-Regular";
 }
 
 .wrapper {
@@ -25,13 +20,9 @@ body {
   margin-top: 100px;
   flex-direction: column;
   align-items: center;
-  font-family: "Pretendard-Regular";
   background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: lightgrey;
-  /* overflow: hidden; */
+  border-radius: 10px;
+  border: 1px solid lightgrey;
 }
 
 .super-wrap {
@@ -43,62 +34,19 @@ body {
   justify-content: center;
 }
 
-.github-img {
-  height: 25px;
-  width: 25px;
-}
-
-.github {
+header {
   display: flex;
+  justify-content: center;
   align-items: center;
+  margin-top: 15px;
+}
+header strong {
+  font-size: 50px;
 }
 
-.skills ul {
-  display: flex;
-  flex-wrap: wrap; /* 줄바꿈 허용 */
-  list-style: none; /* li 앞 점 없애기 */
-  padding: 0;
-}
-
-.certificate-list ul {
-  list-style: none;
-}
-
-.skills {
-  width: 80%;
-  margin: 40px auto;
-  padding: 24px;
-  background-color: #fafafa;
-  border: 1px solid #e0e0e0;
-  border-radius: 10px;
-}
-
-.skills h2 {
-  font-size: 20px;
-  font-weight: 600;
-  color: #222;
-  margin-bottom: 20px;
-  padding-left: 10px;
-}
-
-.skills ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 12px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.skills li {
-  padding: 10px 16px;
-  font-size: 14px;
-  background-color: #ffffff;
-  border: 1px solid #e5e5e5;
-  border-radius: 6px;
-  color: #333;
-  text-align: center;
-  transition: background-color 0.2s ease;
+h2 {
+  color: black;
+  opacity: 0.7;
 }
 
 hr {
@@ -108,204 +56,37 @@ hr {
   opacity: 0.5;
 }
 
-h2 {
-  color: black;
-  opacity: 0.7;
-}
-
-.badge {
-  display: flex;
-  width: 400px;
-  justify-content: center;
-}
-.badge img {
-  display: flex;
-  justify-content: center;
-  margin-left: 3px;
-}
-
-.contact-profile {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.experience-list {
-  display: flex;
-  flex-direction: column;
-}
-
-.experience-item {
-  display: flex;
-  align-items: flex-start;
-  margin: 20px 0;
-}
-
-.experience-list img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-right: 20px;
-  margin-left: 50px;
-}
-
-.experience-item-content {
-  flex: 1;
-  margin-right: 100px;
-}
-
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 15px;
-}
-
-header strong {
-  font-size: 50px;
-}
-
-.certificate-list {
-  width: 80%;
-  margin: 40px auto;
-  padding: 10px 20px;
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-}
-
-.certificate-list h2 {
-  text-align: left;
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 15px;
-  color: #222;
-}
-
-.certificate-list ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.certificate-list li {
-  padding: 8px 0;
-  border-bottom: 1px solid #f0f0f0;
-  font-size: 15px;
-  color: #333;
-}
-
-.certificate-list li:last-child {
-  border-bottom: none;
-}
-
-.certificate-list li small {
-  color: #888;
-  font-size: 13px;
-  margin-left: 5px;
-}
-
-.experience-list {
-  width: 80%;
-  margin: 40px auto;
-  padding: 10px 20px;
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-}
-
-.experience-list h2 {
-  text-align: left;
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 25px;
-  color: #222;
-}
-
-.experience-item {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 25px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #f0f0f0;
-}
-
-.experience-item:last-child {
-  border-bottom: none;
-  margin-bottom: 0;
-}
-
-.experience-item img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-right: 20px;
-  margin-left: 15px;
-}
-
-.experience-item-content {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  margin-right: 5px;
-}
-
-.experience-item-content h3 {
-  margin: 0 0 8px 0;
-  font-size: 18px;
-  color: #333;
-}
-
-.experience-item-content p {
-  margin: 0;
-  font-size: 14px;
-  color: #555;
-  line-height: 1.5;
-}
-
+/* Introduction */
 .introduction {
   width: 80%;
   margin: 40px auto;
   padding: 20px;
   background-color: #ffffff;
 }
-
 .introduction h2 {
   font-size: 22px;
   font-weight: 600;
   color: #222;
   margin-bottom: 30px;
 }
-
 .introduction h3 {
   font-size: 25px;
   line-height: 10px;
 }
-
 .introduction p {
   font-size: 15px;
   line-height: 1.6;
   color: #333;
 }
-
 .introduction strong {
   color: #000;
   font-weight: bold;
 }
-
-.introduction .highlight {
-  color: #4a90e2;
-  font-weight: 500;
-}
-
 .introduction #slogan {
   font-size: 30px;
   margin-bottom: 50px;
   font-style: italic;
 }
-
 .img #me-img {
   width: 150px;
   height: 170px;
@@ -313,7 +94,137 @@ header strong {
   margin-bottom: 20px;
 }
 
-/* 사이드 네비게이션 고정 */
+/* Skills */
+.skills {
+  width: 80%;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+}
+.skills h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+.skills ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.skills li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
+  font-size: 14px;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  color: #333;
+  transition: background-color 0.2s ease;
+}
+.skills-logo img {
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+  object-fit: cover;
+}
+
+/* Experience & Certificate 공통 스타일 */
+.experience-list,
+.certificate-list,
+.contact-list {
+  width: 80%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+.experience-list h2,
+.certificate-list h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 25px;
+  text-align: left;
+}
+.experience-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background-color: #fafafa;
+}
+.experience-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+.experience-item-content {
+  flex: 1;
+}
+.experience-item-content h3 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  color: #333;
+}
+.experience-item-content p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Certificate */
+.certificate-list ul,
+.contact-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.certificate-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 15px;
+  color: #333;
+}
+.certificate-list li:last-child {
+  border-bottom: none;
+}
+.certificate-list li small {
+  color: #888;
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+/* Contact */
+.contact-list li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  margin-top: 60px;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  background-color: #e2e5e8;
+}
+
+/* Side Navigation */
 .side-nav {
   position: fixed;
   top: 50%;
@@ -327,13 +238,11 @@ header strong {
   z-index: 1000;
   text-align: center;
 }
-
 .side-nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
 .side-nav li {
   margin: 10px 0;
   border-bottom: 1px solid #eee;
@@ -341,97 +250,25 @@ header strong {
 .side-nav li:last-child {
   border-bottom: none;
 }
-
 .side-nav a {
   text-decoration: none;
   color: #333;
   font-size: 14px;
   transition: color 0.2s;
 }
-
 .side-nav a:hover {
   color: #007bff;
 }
-
 .active {
   font-weight: bold;
 }
 
-.contact-list {
-  width: 80%;
-  margin: 40px auto;
-  padding: 10px 20px;
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-}
-
-.contact-list ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.contact-list li {
-  margin-bottom: 8px;
-  font-size: 1rem;
-}
-
-.footer {
-  width: 100%;
-  margin-top: 60px;
-  padding: 20px 0;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #666;
-  background-color: #e2e5e8;
-}
-
-.button-wrapper {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 10px;
-  width: 100%;
-}
-
-.learn-more-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff; /* 파란색 */
-  color: white;
-  border: none;
-  border-radius: 8px;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-}
-
-.learn-more-btn:hover {
-  background-color: #0056b3; /* hover 시 어두운 파랑 */
-}
-
-.skills li {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.skills-logo img {
-  width: 20px;
-  height: 20px;
-  margin-right: 3px;
-  object-fit: cover;
-}
-
-/* 탭 버튼 스타일 */
+/* Tabs */
 .experience-tabs {
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
 }
-
 .tab {
   padding: 8px 16px;
   border: none;
@@ -441,30 +278,7 @@ header strong {
   font-weight: bold;
   transition: background-color 0.2s;
 }
-
 .tab.active {
   background-color: #007bff;
   color: white;
-}
-
-/* article 기본 스타일 (필요 시 flex로 내용 정렬) */
-.experience-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 15px;
-  margin-bottom: 20px;
-  padding: 10px;
-  border: 1px solid #eee;
-  border-radius: 10px;
-  background-color: #fafafa;
-}
-
-.experience-item img {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
-}
-
-.experience-item-content {
-  flex: 1;
 }
