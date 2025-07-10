@@ -8,11 +8,11 @@ window.addEventListener("scroll", () => {
     if (window.pageYOffset >= sectionTop) {
       current = section.getAttribute("id");
     }
-    console.log(current);
+
   });
 
   navLinks.forEach((link) => {
-    link.classList.remove("active");
+    link.classList.remove(" ");
     if (link.getAttribute("href").includes(current)) {
       link.classList.add("active");
     }
